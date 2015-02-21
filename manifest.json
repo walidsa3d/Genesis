@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "js": [ "js/jquery/jquery.min.js", "src/inject/inject.js" ],
+      "matches": [ "http://www.amazon.com/*", "https://www.amazon.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "Searches and displays ebook results from libgen.org (Library Genesis) when you visit a book page on Amazon",
+   "icons": {
+      "128": "icons/icon128.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAksf1qiXBKcp2H0+0LdV8ebDkWP/AGH+9uYvAto2XTmCTN73n0Y91kFlX1ZGGxHBu2AfVbhdXti31SlN4mS/nvkkRpNVIQSB6HGJO102vMZpgJvn1oJmKnB8Jx6BQm+8Wb0JpAWOp+lIOWVP5qZiVbn7vDMUUXD9DK8BdCqndB2BEfFDpsAT7UPc8nr8Ec7iciJIJ+5KhFhZQRnSDhehgWDOhzYzjVefllTYJAyDOeDBv8/GgYrjjegRhq3MeYiY2vghoYtClyqV6XhrV1kkqN3zIw5XhSRb1aw6U2PIMNiHIh9SyenoJnrPL7cSZTiE+3RVLJ93hoL/kBumSRR06lwIDAQAB",
+   "manifest_version": 2,
+   "name": "LibGen",
+   "permissions": [ "http://libgen.org/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.4",
+   "web_accessible_resources": [ "images/*", "js/jquery/jquery.min.map" ]
+}
